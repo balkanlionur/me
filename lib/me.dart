@@ -56,7 +56,7 @@ class MeView extends StatelessWidget {
                 leading: const Icon(Icons.link),
                 dense: true,
               )),
-          Row(
+          /* Row(
             children: const [
               _bottomContainer(
                 textt: 'Facebook',
@@ -64,13 +64,19 @@ class MeView extends StatelessWidget {
               _bottomContainer(textt: 'İnstagram'),
               _bottomContainer(textt: 'Github'),
             ],
-          ),
+          ),*/
         ],
       ),
+      bottomNavigationBar: BottomNavigationBar(items: const [
+        BottomNavigationBarItem(
+            icon: Icon(Icons.cancel_presentation_rounded), label: 'Cancel'),
+        BottomNavigationBarItem(
+            icon: Icon(Icons.more), label: 'Show more activity')
+      ]),
     );
   }
 }
-
+/*
 // ignore: camel_case_types
 class _bottomContainer extends StatelessWidget {
   const _bottomContainer({
@@ -90,4 +96,4 @@ class _bottomContainer extends StatelessWidget {
       ),
     );
   }
-}
+}*/
